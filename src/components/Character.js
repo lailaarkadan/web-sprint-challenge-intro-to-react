@@ -18,9 +18,9 @@ color:
 font-family: 'Exo', sans-serif;
 padding: 50px;
 transition: transform .9s ease-in-out;
-    &:hover {
-     transform: scale(1.5) rotate(360deg);
-        background: #a19193;
+ &:hover {
+ transform: scale(1.5) rotate(360deg);
+ background: #a19193;
       }
 `
 
