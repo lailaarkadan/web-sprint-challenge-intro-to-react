@@ -6,9 +6,7 @@ import styled from 'styled-components';
 
 const Title = styled.h1`
 font-size: 2em;
-    transition: transform .7s ease-in-out;
-    &:hover {
-     transform: scale(1.5) rotate(360deg);
+    
      width: 80%;
      margin: 0 auto;
      color: #4f0744;
@@ -19,13 +17,6 @@ font-size: 2em;
 
 
 const App = () => {
-
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
-
-  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
 
   
   const [characters, setCharacters] = useState([])

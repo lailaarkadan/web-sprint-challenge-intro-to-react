@@ -4,25 +4,32 @@ import styled from "styled-components";
 
 
 const Style = styled.div`
+box-sizing: border-box;
+padding: 0.5rem;
+border-radius: 8px;
 display: flex;
-flex-flow: column wrap;
-column-gap: 20px;
-row-gap: 5px;
-
+flex-direction: column;
+justify-content: center;
 border: solid #1d6e46;
 margin-left: 20%;
 margin-right:20%;
 color: 
-#4f0b44
-;
+#4f0b44;
 font-family: 'Exo', sans-serif;
 padding: 50px;
+transition: transform .9s ease-in-out;
+    &:hover {
+     transform: scale(1.5) rotate(360deg);
+        background: #a19193;
+      }
 `
 
 
-    export default function Character(data) {
 
-return (
+
+export default function Character(data) {
+
+    return (
    
    <Style >
         <h2>{data.name}</h2>  
