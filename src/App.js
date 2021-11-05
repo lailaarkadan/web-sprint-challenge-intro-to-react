@@ -2,7 +2,20 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
 import Character from './components/Character'
+import styled from 'styled-components';
 
+const Title = styled.h1`
+font-size: 2em;
+    transition: transform .7s ease-in-out;
+    &:hover {
+     transform: scale(1.5) rotate(360deg);
+     width: 80%;
+     margin: 0 auto;
+     color: #4f0744;
+     font-family: 'Exo', sans-serif;
+     padding: 50px;
+     font-size: 65px;
+`;
 
 
 const App = () => {
@@ -29,7 +42,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <Title className="Header">React Wars</Title>
     
       {characters.map((data, info) => {
         return(
@@ -42,7 +55,7 @@ const App = () => {
 }
 
 export default App;
-// .map is giving me an error - map not defined
+
 
 
 

@@ -4,19 +4,28 @@ import styled from "styled-components";
 
 
 const Style = styled.div`
-border: 2px solid green;
+display: flex;
+flex-flow: column wrap;
+column-gap: 20px;
+row-gap: 5px;
+
+border: solid #1d6e46;
 margin-left: 20%;
 margin-right:20%;
-h2, p{
-    color: ; black
-    font-family: serif
-}
+color: 
+#4f0b44
+;
+font-family: 'Exo', sans-serif;
+padding: 50px;
 `
-export default function Character(data) {
+
+
+    export default function Character(data) {
 
 return (
-    <Style className='App'>
-        <h2>{data.name}</h2>    
+   
+   <Style >
+        <h2>{data.name}</h2>  
         <h4>Gender: {data.gender}</h4>
         <h4>Height: {data.height}</h4>
         <h4>Mass: {data.mass}</h4>
